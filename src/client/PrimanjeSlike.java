@@ -29,7 +29,7 @@ public class PrimanjeSlike extends Thread {
 
             do {
                 try {
-                    count += in.read(bytes, count, bytes.length - count);
+                    count += in.read(bytes, count, bytes.length - count);//u koji buffer, offset, maksimum bajtova za citanje
                 } catch (IOException e) {
                     //e.printStackTrace();
                 }
